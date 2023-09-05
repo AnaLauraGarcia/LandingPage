@@ -1,0 +1,326 @@
+* {list-style: none; margin:0px}
+
+:root {
+    --fuenteTitulosYSub: "IBM Plex Sans", sans-serif;
+    --fuenteParrafos: "IBM Plex Mono", monospace;
+
+    --colorUno: #060a24;;
+    --colorDos: #0000a3;
+    --colorTres: #0000ff;
+    --colorCuatro:#00f3bb;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #808080;}
+
+
+body {overflow-x: hidden;} 
+
+
+
+/* BOTONES ------------------------------------------------------------------------------------*/
+
+.button {
+    background-color: var(--colorCuatro);
+    width: 200px;
+    height: 56px;
+    font-family: var(--fuenteParrafos);
+    font-size: 18px;
+    color: var(--primario);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;}
+  
+.button:hover {
+    background-image: linear-gradient(225deg, var(--colorDos) -40%, var(--colorCuatro) 100%); color: white;}
+  
+
+
+/* LINKS DEL MENU -----------------------------------------------------------------------------*/
+
+.link {
+    font-size: 16px;
+    padding: 0 5px 0 55px;
+    color: var(--colorUno);
+    text-decoration: none;
+    font-family: var(--fuenteParrafos);}
+
+  
+.link:hover {
+    text-decoration: line-through; color: var(--colorCuatro);}
+
+.link:active {
+    text-decoration: line-through; color: var(--gris);}
+
+
+
+/* BANNER Y MENU ------------------------------------------------------------------------------*/
+  
+.header {
+    display: flex;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--blanco);
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;}
+ 
+.bannerMenu { display: flex; margin-right: 100px;}
+  
+.bannerLogo img { height: 36px; width: 36px; margin-left: 100px;}
+
+
+  
+/* PARTE DE HELLO WORLD ----------------------------------------------------------------------*/
+  
+.boxHola { margin: 120px 200px; width: 100%;}
+  
+.boxHola h1 {
+    font-family: var(--fuenteTitulosYSub);
+    font-size: 64px;
+    color: var(--colorUno);
+    font-weight: 300;}
+  
+.boxHola p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    font-family: var(--fuenteParrafos);
+    color: var(--colorUno);
+    font-weight: 300;}
+
+.boxHola button { margin-top: 45px; }
+
+.tachado { text-decoration: line-through;}
+
+
+
+/* FONDO DE EPISODIO ----------------------------------------------------------------------*/
+
+.fondoEpisodio {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(225deg, var(--colorTres) 0%, var(--colorDos) 100%);
+    transform: skewY(-6deg);
+    transform-origin: top left;}
+
+
+    
+/* EPISODIO -------------------------------------------------------------------------------*/
+
+.boxEpisodio h2 {
+    position: relative;
+    margin: 196px 200px 25px;
+    font-family: var(--fuenteTitulosYSub);
+    font-size: 48px;
+    color: var(--blanco);
+    letter-spacing: 0;
+    font-weight: 400;}
+
+
+
+ /* iFRAME SPOTY ----------------------------------------------------------------------*/ 
+  
+.boxIframe {
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly}
+  
+.boxIframe iframe {
+    margin-bottom: 75px;
+    width: 684px;
+    height: 232px;}
+
+
+
+/* NOSOTROS -------------------------------------------------------------------------------*/   
+  
+.boxNosotros {
+    justify-content: center;
+    display: flex;
+    align-items: center;}
+  
+.imgNosotros {
+    position: relative;
+    width: 457.6px;
+    height: 650px;
+    margin-right: 50px; }
+    
+  
+.loremNosotros h2 {
+    font-size: 50px;
+    font-family: var(--fuenteTitulosYSub);
+    color: var(--colorUno);
+    letter-spacing: 0;
+    font-weight: 200;}
+    
+  
+.loremNosotros p {
+    width: 480px;
+    height: 200px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-family: var(--fuenteParrafos);
+    color: var(--colorUno);
+    font-weight: 400;}
+    
+
+
+ /* INVITADOS ---------------------------------------------------------------------------*/   
+
+.boxInvitados h2 {
+    margin: 36px 200px;
+    font-size: 48px;
+    font-family: var(--fuenteTitulosYSub);
+    color: var(--colorUno);
+    letter-spacing: 0;
+    font-weight: 400;}
+
+  
+.imgInvitados {
+    width: 554px;
+    height: auto;
+    margin-top: -5px;}
+
+
+.boxImgInvitados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;}
+    
+
+
+/* TEMAS -------------------------------------------------------------------------------*/   
+
+.tema {
+    font-family: var(--fuenteTitulosYSub);
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--colorUno);
+    letter-spacing: 0;
+    width: 260px;}
+
+.temas h2 {
+    font-family: var(--fuenteTitulosYSub);
+    font-size: 49px;
+    color: var(--colorUno);
+    letter-spacing: 0;
+    font-weight: normal;
+    margin: 56px 310px;}
+
+ 
+.boxTemas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 200px;}
+    
+
+.tema p { margin-top: 29px;}
+
+.tema img { justify-content: center;}
+  
+
+
+ /* NOVEDADES ------------------------------------------------------------------------*/   
+
+ .boxNovedades {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;}
+
+
+.boxNovedades h2 {
+    font-family: var(--fuenteTitulosYSub);
+    font-size: 48px;
+    color: var(--blanco);
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;}
+
+
+.boxNovedades button {
+    position: relative;
+    width: 354px;
+    height: 56px;
+    margin-top: 36px;}
+
+
+
+ /* FONDO DE NOVEDADES ------------------------------------------------------------------*/   
+ 
+ .fondoNovedades {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(225deg, var(--colorTres) 0%, var(--colorDos) 100%);}
+
+.fNovedades {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(225deg, var(--colorTres) 0%, var(--colorDos) 100%);
+    text-align: center;
+    transform: skewY(-6deg);
+    transform-origin: top left;}
+
+
+  
+ /* FOOTER -----------------------------------------------------------------------------*/   
+
+.footer {
+    position: relative;
+    height: 80px;
+    margin-top: 200px; }
+
+.footer p {
+    line-height: 28px;
+    font-family: var(--fuenteParrafos);
+    font-weight: normal;
+    font-size: 17px;
+    color: var(--colorUno);
+    letter-spacing: 0;}
+
+    
+
+ /* REDES -----------------------------------------------------------------------------*/ 
+  
+.boxRedes {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 0px 100px 0px 100px; }
+
+.boxRedes a i {color: var(--negro); }
+
+#telegram { margin-right: 30px; }
+
+#facebook { margin-right: 30px; }
+
+#twitter { margin-right: 30px; }
+
+#instagram { margin-right: 30px; }
+
+#spotify { margin-right: 30px; width: 18px; }
+
+  
+
+
+
+
+
+
